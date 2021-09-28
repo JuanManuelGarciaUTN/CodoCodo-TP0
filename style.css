@@ -73,7 +73,7 @@ nav{
 
 .nav--li {
     display: block;
-    padding: 10px;
+    padding: 10px 30px;
     width: 100%;
     font-size: 14px;
 }
@@ -82,7 +82,7 @@ nav{
     margin-top: 38px;
     font-size: 30px;
     text-align: left;
-    padding: 8px 35px;
+    padding: 8px 0 8px 17px;
 }
 
 .nav--responsive-ul {
@@ -100,12 +100,12 @@ nav{
 .nav--li-container{
     padding-top: 70px;
     position: relative;
-    left: -80vw;
+    left: calc(-100vw + 60px);
     top: -110vh;
     background-color: #282828;
     height: calc(100vh);
     width: 75vw;
-    transition: all .6s;
+    transition: all .4s;
     z-index: 1;
     border: solid #aaa;
     border-width: 0 3px 0px 0;
@@ -130,14 +130,14 @@ nav{
     position: relative;
     background-color: var(--footer-color);
     z-index: 100;
-    width: 80vw;
+    width: calc(100vw - 60px);
 }
 
 .responsive-menu{
     right: 0.8vw;
     position: relative;
     z-index: 1;
-    width: 20vw;
+    width: 60px;
 }
 
 footer{
@@ -176,5 +176,6 @@ footer{
 }
 
 .fab {
+    text-align: center;
     color: var(--back-color);
 }
